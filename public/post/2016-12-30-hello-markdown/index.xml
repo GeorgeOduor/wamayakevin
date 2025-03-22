@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Plain Markdown Post on Kevin&#39;s Portfolio</title>
+    <link>https://kevinotieno.netlify.app/post/2016-12-30-hello-markdown/</link>
+    <description>Recent content in A Plain Markdown Post on Kevin&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate><atom:link href="https://kevinotieno.netlify.app/post/2016-12-30-hello-markdown/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
