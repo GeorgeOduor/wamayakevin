@@ -1,0 +1,430 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Kevin's Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Kevin's Portfolio"
+  description: My name is Kevin and I am a digital artist and web developer. I am passionate about creating beautiful and functional websites that help people connect and share their ideas. I have experience working with a variety of technologies, including HTML, CSS, JavaScript, and React. I am always looking for new opportunities to collaborate and create something amazing. If you would like to work with me, please feel free to reach out!
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Kevin" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello, I'm"
+    title: "Kevin Otieno"
+    subtitle: "I tell powerful stories through media and communication"
+    #content: "I create compelling content, manage digital campaigns, and craft powerful stories that inspire action and amplify impact."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-facebook
+          url: https://example.com
+        - icon: fab fa-x-twitter
+          url: https://example.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I’m a passionate media and communications professional with a background in journalism, public relations, and digital storytelling. My expertise lies in creating impactful content—from compelling documentaries to effective digital campaigns—that drives community engagement and positive change.
+
+      I currently serve as a Communications & PR Officer at Siaya Muungano Network, where I manage media relations, produce visual content, and lead outreach initiatives that enhance visibility and stakeholder engagement.
+    skills:
+      enable: true
+      title: "Core Skills & Tools I Work With:"
+      items:
+           - "Storytelling & Content Strategy"
+           - "Public Relations & Media Engagement"
+           - "Digital Campaigns & Social Media Management"
+           - "Multimedia Production (Video, Graphics, Audio)"
+           - "Documentary & Visual Storytelling"
+           - "Website Content Management"
+        
+
+  # Experience
+  # experience:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - job: "Senior Software Developer"
+  #       company: "Facebook"
+  #       companyUrl: "https://example.com"
+  #       date: "Jan 2022 - present"
+  #       featuredLink:
+  #         enable: true
+  #         name: "View the project"
+  #         url: "https://example.com"
+  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+
+# Experience
+  experience:
+    enable: true
+    items:
+      - job: "Communications & Public Relations Officer"
+        company: "Siaya Muungano Network"
+        companyUrl: "https://twitter.com/SiayaNetwork"
+        date: "Jan 2021 – Present"
+        featuredLink:
+          enable: true
+          name: "View my work samples"
+          url: "https://youtube.com/results?search_query=siaya+muungano+network"
+        content: |-
+          Leading media relations, content creation, and digital campaigns to boost stakeholder engagement and organizational visibility.
+  
+          - Produced impactful documentaries on climate change, youth, and PWD empowerment.
+          - Increased website traffic by 25% through consistent content updates.
+          - Managed social media accounts, growing online presence and engagement.
+          - Developed IEC materials and quarterly newsletters to improve public awareness.
+          - Strengthened community trust and media coverage through strategic PR.
+ 
+      - job: "Operations Officer"
+        company: "Siaya County Ministry of Health"
+        date: "Aug 2020 – Dec 2020"
+        featuredLink:
+          enable: false
+        content: |-
+          Played a critical role in Covid-19 awareness and vaccination efforts.
+  
+          - Traced vaccination defaulters to improve regional immunization rates.
+          - Enhanced community awareness through targeted outreach campaigns.
+  
+      - job: "Radio Presenter"
+        company: "Kababa Radio Kisumu"
+        date: "Oct 2019 – Jul 2020"
+        featuredLink:
+          enable: false
+        content: |-
+          Hosted engaging programs and contributed to the station’s community impact and growth.
+  
+          - Presented a popular evening drive show and Sunday politics program.
+          - Reported news and led community-centered discussions during election season.
+          - Supported station marketing efforts, increasing revenue through ad sales.
+  
+      - job: "Media Intern"
+        company: "Radio Nam Lolwe-Kisumu"
+        date: "Aug 2020 – Dec 2020"
+        featuredLink:
+          enable: false
+        content: |-
+          Gained hands-on experience in journalism and technical production.
+  
+          - Wrote and reported feature stories and daily news.
+          - Produced promos, sermons, and advertisements.
+          - Co-hosted live shows and operated studio equipment.
+
+# Education
+  education:
+    enable: true
+    items:
+      - title: "Bachelor of Arts in Communication and Media"
+        school:
+          name: "Chuka University"
+          url: "https://www.chuka.ac.ke"
+        date: "2015 – 2019"
+        content: |-
+          Relevant coursework included Media Ethics, Public Relations, Journalism, and Digital Media Production.
+  
+          Activities:
+            - Produced student-led media content
+            - Participated in campus journalism initiatives
+  
+      - title: "Kenya Certificate of Secondary Education (KCSE)"
+        school:
+          name: "Rangala Boys' Secondary School"
+          url: "https://example.org"
+        date: "2011 – 2014"
+        GPA: "B+ (70 points)"
+        content: |-
+          Achieved strong academic performance with a focus on humanities and languages.
+  
+      - title: "Kenya Certificate of Primary Education (KCPE)"
+        school:
+          name: "Rangala Boys' Primary School"
+          url: "https://example.org"
+        date: "2003 – 2010"
+        GPA: "378 out of 500"
+        content: |-
+          Built a strong foundation in reading, writing, and analytical skills.
+
+
+# Achievements
+  achievements:
+    enable: true
+    items:
+      - title: Documentary Production Milestone
+        content: Produced multiple community-centered documentaries on climate change, youth empowerment, and disability inclusion that were featured across various platforms.
+        url: https://youtube.com/results?search_query=siaya+muungano+network
+        image: /images/achievement.jpg
+  
+      - title: Digital Engagement Boost
+        content: Led strategic content creation that increased Siaya Muungano Network’s website traffic by 25% and significantly grew social media engagement.
+        url: https://twitter.com/SiayaNetwork
+        image: /images/achievement.jpg
+  
+      - title: PR & Media Recognition
+        content: Successfully positioned the organization in local media, enhancing visibility and community access during project launches.
+        image: /images/achievement.jpg
+  
+      - title: IEC Materials Development
+        content: Designed and disseminated impactful Information, Education, and Communication (IEC) materials to raise public awareness and support project goals.
+        url: https://drive.google.com/drive/folders/1M2QFFgNglGv9WUegrJqXWFtZ2gv1k8X5?usp=sharing
+        image: /images/achievement.jpg
+  
+      - title: Social Media Campaigns
+        content: Created and ran successful social media campaigns and infographics that boosted stakeholder engagement and visibility.
+        url: https://drive.google.com/drive/folders/1CaYFoc2_XX_ltjyplpC26xs_QjPkfn1v?usp=sharing
+        image: /images/achievement.jpg
+
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: Community Empowerment Documentaries
+        content: Produced a series of documentaries highlighting youth empowerment, climate change, disability inclusion, and maternal support in Siaya County.
+        image: /images/projects/documentary.jpg
+        featured:
+          name: Watch Now
+          link: https://youtube.com/results?search_query=siaya+muungano+network
+        badges:
+          - "Storytelling"
+          - "Videography"
+          - "Community Impact"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtube.com/results?search_query=siaya+muungano+network
+  
+      - title: Digital & Social Media Campaigns
+        content: Led the design and execution of social media campaigns, infographics, and e-posters that amplified engagement and stakeholder interaction.
+        image: /images/projects/socialmedia.jpg
+        featured:
+          name: Campaigns Gallery
+          link: https://drive.google.com/drive/folders/1CaYFoc2_XX_ltjyplpC26xs_QjPkfn1v?usp=sharing
+        badges:
+          - "Content Creation"
+          - "Digital Strategy"
+          - "Social Media"
+        links:
+          - icon: fab fa-twitter
+            url: https://twitter.com/SiayaNetwork
+  
+      - title: IEC Materials & Publications
+        content: Designed and authored impactful Information, Education, and Communication (IEC) materials including newsletters, reports, and advocacy collateral.
+        image: /images/projects/iec.jpg
+        featured:
+          name: View Publications
+          link: https://drive.google.com/drive/folders/1M2QFFgNglGv9WUegrJqXWFtZ2gv1k8X5?usp=sharing
+        badges:
+          - "Graphic Design"
+          - "Advocacy"
+          - "Publication"
+        links:
+          - icon: fab fa-google-drive
+            url: https://drive.google.com/drive/folders/1M2QFFgNglGv9WUegrJqXWFtZ2gv1k8X5?usp=sharing
+  
+      - title: Photo Documentation
+        content: Captured and curated extensive photo documentation for events and field activities, used for stakeholder reporting and digital storytelling.
+        image: /images/projects/photography.jpg
+        featured:
+          name: View Photos
+          link: https://drive.google.com/drive/folders/1NLPfhvcl1orjlnX9v7RVxWTHAJwcD0RX?usp=sharing
+        badges:
+          - "Photography"
+          - "Visual Storytelling"
+          - "Event Coverage"
+        links:
+          - icon: fab fa-google-drive
+            url: https://drive.google.com/drive/folders/1NLPfhvcl1orjlnX9v7RVxWTHAJwcD0RX?usp=sharing
+  
+    #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: I’m always open to meaningful conversations, collaborations, or new opportunities. Whether you have a project in mind, need a storyteller for your cause, or just want to connect—feel free to reach out!
+    btnName: Email Me
+    btnLink: mailto:wamayakevin@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      linkedin: https://www.linkedin.com/in/kevin-otieno-bb42b8161/
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+  
+    #customScripts: -| # You can add custom scripts which will be added before </body> tag
+    #  <script type="text/javascript"><!-- any script here --></script>

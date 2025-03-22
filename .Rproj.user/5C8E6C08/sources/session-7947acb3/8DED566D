@@ -1,0 +1,26 @@
+{
+    "id": "8DED566D",
+    "path": "F:/projects/wamayakevin/config.yaml",
+    "project_path": "config.yaml",
+    "type": "yaml",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1742617867456.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "115,33",
+        "scrollLine": "103"
+    },
+    "folds": "157|8|174|41|\n194|13|247|63|\n250|12|281|79|\n285|15|310|38|\n314|11|373|12|\n316|10|371|101|\n",
+    "lastKnownWriteTime": 1742649928,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1742649928823,
+    "read_only": false,
+    "read_only_alternatives": []
+}

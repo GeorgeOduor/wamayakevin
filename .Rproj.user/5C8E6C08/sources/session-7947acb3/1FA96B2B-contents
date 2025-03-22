@@ -1,0 +1,23 @@
+- job: "Radio Presenter"
+company: "Kababa Radio 88.8FM"
+date: "Oct 2019 – Jul 2020"
+featuredLink:
+  enable: false
+content: |-
+  Hosted engaging programs and contributed to the station’s community impact and growth.
+
+- Presented a popular evening drive show and Sunday politics program.
+- Reported news and led community-centered discussions during election season.
+- Supported station marketing efforts, increasing revenue through ad sales.
+
+- job: "Media Intern"
+company: "Radio Nam Lolwe 93.7FM"
+date: "Aug 2020 – Dec 2020"
+featuredLink:
+  enable: false
+content: |-
+  Gained hands-on experience in journalism and technical production.
+
+- Wrote and reported feature stories and daily news.
+- Produced promos, sermons, and advertisements.
+- Co-hosted live shows and operated studio equipment.
